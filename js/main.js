@@ -1,7 +1,3 @@
-/**
- * Created by jakob on 1/2/2017.
- */
-
 var mymap = L.map('map', {center: [44.13, -119.93], zoom: 7});
 
 L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
