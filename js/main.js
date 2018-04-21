@@ -35,15 +35,24 @@ var crs = new L.Proj.CRS('EPSG:3085', '+proj=aea +lat_1=27.5 +lat_2=35 +lat_0=18
         0.298582153289307 / 16
     ]
 });
+
+var corner1 = L.latLng(55, -170),
+    corner2 = L.latLng(-20, 0),
+    bounds = L.latLngBounds(corner1, corner2);
+
 // define map object and parameters
 var mymap = L.map('map', {
     center: [38, -98],
+    zoomControl: false,
     zoom: 3,
     maxZoom: 10,
     minZoom: 2,
     detectRetina: true,
+    maxBounds: bounds,
     crs: crs // set projection to Alber's Equal Area
 });
+
+L.control.zoom({position: "bottomright"}).addTo(mymap);
 // define color scale for airport markers (color-blind friendly yellow/purple combo)
 var colors = chroma.scale(['#ffff00', '#800080']).mode('lch').colors(2);
 // set color of airport markers based on control tower Y/N (id 1/0)
@@ -72,15 +81,15 @@ function setColor(density) {
     else  { id = 0; }
     return colors[id];
 }
-// set choropleth fill color based on airport count
+// set choropleth style based on airport count, and style state borders
 function style(feature) {
     return {
         fillColor: setColor(feature.properties.count),
-        fillOpacity: 0.2,
+        fillOpacity: 0.3,
         weight: 2,
         opacity: 1,
-        color: '#ffffff',
-        dashArray: '3'
+        color: '#800080',
+        dashArray: '2'
     };
 }
 // add us-states data layer
@@ -96,7 +105,7 @@ states = L.geoJson.ajax("assets/us-states.geojson", {
     }
 }).addTo(mymap);
 // define legend
-var legend = L.control({position: 'topright'});
+var legend = L.control({position: 'topleft'});
 // set legend color scale and breaks
 legend.onAdd = function () {
     var div = L.DomUtil.create('div', 'legend');
