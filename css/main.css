@@ -6,7 +6,7 @@ body {
     height:100%;
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 #map {
@@ -18,7 +18,7 @@ body {
     line-height: 16px;
     width: 140px;
     color: #333333;
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family: 'Comfortaa', cursive;
     padding: 6px 8px;
     background: white;
     background: rgba(255,255,255,0.5);
@@ -48,8 +48,54 @@ body {
 }
 
 #credits p {
-    margin-top: 5px;
+    margin-top: 0px;
     font-size: 12px;
-    text-align: left;
+    text-align: center;
     line-height: 16px;
+}
+
+.leaflet-tooltip.feature-label {
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 1px 1px 3px #000000;
+    color: rgb(255, 255, 255)
+}
+
+.leaflet-popup-content {
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 0px 0px 3px #ffffff;
+    color: rgb(0, 0, 0)
+}
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    border: transparent;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 0px 0px 3px #ffffff;
+    color: rgb(0, 0, 0)
+}
+
+.leaflet-container {
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    border: transparent;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: 0px 0px 3px #ffffff;
+    color: rgb(0, 0, 0)
 }
