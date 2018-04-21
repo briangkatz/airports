@@ -1,4 +1,4 @@
-###Grading Rubric:
+### Grading Rubric:
 
 Control tower icons. **(3 points)**
 
