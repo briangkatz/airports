@@ -6,7 +6,7 @@ body {
     height:100%;
     padding: 0;
     margin: 0;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Crushed', 'Open Sans', sans-serif, cursive;
 }
 
 #map {
@@ -18,7 +18,7 @@ body {
     line-height: 16px;
     width: 140px;
     color: #333333;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Crushed', 'Open Sans', sans-serif, cursive;
     padding: 6px 8px;
     background: white;
     background: rgba(255,255,255,0.5);
@@ -60,7 +60,7 @@ body {
     box-shadow: none;
     font-weight: bold;
     font-size: 14px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Crushed', 'Open Sans', sans-serif, cursive;
     text-shadow: 1px 1px 3px #000000;
     color: rgb(255, 255, 255)
 }
@@ -71,7 +71,7 @@ body {
     box-shadow: none;
     font-weight: bold;
     font-size: 12px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Crushed', 'Open Sans', sans-serif, cursive;
     text-shadow: 0px 0px 3px #ffffff;
     color: rgb(0, 0, 0)
 }
@@ -83,7 +83,7 @@ body {
     border: transparent;
     font-weight: bold;
     font-size: 12px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Crushed', 'Open Sans', sans-serif, cursive;
     text-shadow: 0px 0px 3px #ffffff;
     color: rgb(0, 0, 0)
 }
@@ -95,7 +95,7 @@ body {
     border: transparent;
     font-weight: bold;
     font-size: 12px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Crushed', 'Open Sans', sans-serif, cursive;
     text-shadow: 0px 0px 3px #ffffff;
     color: rgb(0, 0, 0)
 }
