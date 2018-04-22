@@ -1,5 +1,4 @@
 # US Airports
-
 **Introduction:**
 
 This map was created to display all of the airports in the United States and whether or not those airports have control towers.
