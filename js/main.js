@@ -42,7 +42,7 @@ var corner1 = L.latLng(55, -170),
 
 // define map object and parameters
 var mymap = L.map('map', {
-    center: [38, -98],
+    center: [39, -97],
     zoomControl: false,
     zoom: 3,
     maxZoom: 10,
@@ -85,7 +85,7 @@ function setColor(density) {
 function style(feature) {
     return {
         fillColor: setColor(feature.properties.count),
-        fillOpacity: 0.3,
+        fillOpacity: 0.4,
         weight: 2,
         opacity: 1,
         color: '#800080',
@@ -125,10 +125,12 @@ legend.addTo(mymap);
 
 // https://github.com/cloudybay/leaflet.latlng-graticule
 L.latlngGraticule({
+    font: "16px Yanone Kaffeesatz",
+    color: "#800080",
+    opacity: 0.4,
     showLabel: true,
-    opacity: 0.2,
-    color: "#000000",
-    fillColor: '#747474',
+    lngLineCurved: 0, // 0 for straight longitude lines
+    latLineCurved: 1, // 1 for curved graticules (conic projections), 0 for straight lines
     zoomInterval: [
         {start: 3, end: 3.9, interval: 4},
         {start: 4, end: 5.9, interval: 2},
